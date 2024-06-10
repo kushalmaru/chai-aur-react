@@ -16,6 +16,17 @@ const addValue = () => {
   }
   else {
     setCounter(counter + 1)
+    // setCounter(counter + 1) 
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)  This all will not increment the counter directly from 15 to 20 as react works on batch processing
+
+  // Even though u want to increment this no. of times then do below steps
+
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
   }
   
 }
